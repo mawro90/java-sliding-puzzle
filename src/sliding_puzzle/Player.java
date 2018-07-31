@@ -13,7 +13,7 @@ public class Player {
 	}
 	
 	void Play(Map map, Rules rules) {
-		System.out.print("Move puzzle (l)eft/(r)ight/(u)p/(d)own and type enter:");
+		System.out.print("Move puzzle (a)left/(d)right/(w)up/(s)down and type enter:");
 		String choice=move.next();
 		switch(choice.toString()) {
 			case "d":

@@ -11,7 +11,7 @@ public class Game{
 			matrix.printMap();
 			if(rules.isFinished(matrix)) break;
 		}
-		System.out.println("Congratulations. You're the winner");
+		System.out.println("===Congratulations! You're the winner!!!===");
 	}
 
 }

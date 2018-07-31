@@ -12,7 +12,7 @@ public class Rules {
 		int counter=1;
 		for(int i=0; i<matrix.getSize(); i++) {
 			for(int j=0; j<matrix.getSize(); j++) {
-				if (counter == 1) counter=0;
+				if (counter == 16) counter=0;
 				if(matrix.getElement(i, j)==counter) {
 					counter++;
 				}
