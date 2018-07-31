@@ -8,4 +8,17 @@ public class Rules {
 		}
 		else return true;
 	}
+	boolean isFinished(Map matrix){
+		int counter=1;
+		for(int i=0; i<matrix.getSize(); i++) {
+			for(int j=0; j<matrix.getSize(); j++) {
+				if (counter == 1) counter=0;
+				if(matrix.getElement(i, j)==counter) {
+					counter++;
+				}
+				else return false;
+			}
+		}
+		return true;
+	}
 }

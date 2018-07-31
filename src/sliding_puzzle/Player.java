@@ -16,28 +16,28 @@ public class Player {
 		System.out.print("Move puzzle (l)eft/(r)ight/(u)p/(d)own and type enter:");
 		String choice=move.next();
 		switch(choice.toString()) {
-			case "l":
+			case "d":
 				x=map.getZeroX();
 				y=map.getZeroY()-1;
 				if(!rules.isMoveValid(this, map)) {
 					y=map.getZeroY();
 				};
 				break;
-			case "r":
+			case "a":
 				x=map.getZeroX();
 				y=map.getZeroY()+1;
 				if(!rules.isMoveValid(this, map)) {
 					y=map.getZeroY();
 				};
 				break;
-			case "u":
+			case "s":
 				x=map.getZeroX()-1;
 				y=map.getZeroY();
 				if(!rules.isMoveValid(this, map)) {
 					x=map.getZeroX();
 				};
 				break;
-			case "d":
+			case "w":
 				x=map.getZeroX()+1;
 				y=map.getZeroY();
 				if(!rules.isMoveValid(this, map)) {

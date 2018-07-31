@@ -9,7 +9,9 @@ public class Game{
 			player.Play(matrix,rules);
 			player.movePuzzle(matrix);
 			matrix.printMap();
+			if(rules.isFinished(matrix)) break;
 		}
+		System.out.println("Congratulations. You're the winner");
 	}
 
 }
